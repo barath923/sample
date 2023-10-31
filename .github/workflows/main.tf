@@ -10,11 +10,6 @@ terraform {
   }
 }
 
-# Configure the Microsoft Azure Provider
-provider "azurerm" {
-  features {}
-}
-
 # Terraform Modules starts
 module "resource_group" {
   source = "./resource_group"
