@@ -25,6 +25,8 @@ jobs:
           ls
           cd .github
           ls
+          cd workflows
+          ls
           terraform init
           terraform validate
           terraform plan -out=tfplan
