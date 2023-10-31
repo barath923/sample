@@ -20,10 +20,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Configure Azure Credentials
         env:
-          ARM_CLIENT_ID: 18a4cc84-68bd-47ec-969d-0c1ee3dc6d23
-          ARM_CLIENT_SECRET: 988418e0-be54-4439-ab1b-02b1eda8e878
-          ARM_SUBSCRIPTION_ID: cf28e788-bdae-4ddc-a53c-9bab2a280655
-          ARM_TENANT_ID: 2071a0b3-ad94-4cc1-a200-25448fd54e50
+          ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+          ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+          ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
         run: |
           terraform init
           terraform validate
