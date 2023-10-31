@@ -12,9 +12,6 @@ jobs:
     name: Terraform
     runs-on: ubuntu-latest
     environment: production
-    defaults:
-      run:
-        shell: Bash
     steps:
       - name: Checkout
         uses: actions/checkout@v3
