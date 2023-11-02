@@ -19,7 +19,7 @@ provider "azurerm" {
 resource "azurerm_virtual_network" "HT_Vnet" {
   name                = "ht-terraform-vnet"
   location            = "Central India"
-  resource_group_name = "hitech-b142"
+  resource_group_name = "rg1"
   address_space       = ["10.10.0.0/16"]
 
   subnet {
@@ -42,5 +42,5 @@ resource "azurerm_virtual_network" "HT_Vnet" {
 resource "azurerm_network_security_group" "HT_SG" {
   name                = "Terraform-security-group"
   location            = "Central India"
-  resource_group_name = "hitech-b142"
+  resource_group_name = "rg1"
 }
