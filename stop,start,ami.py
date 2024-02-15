@@ -1,11 +1,11 @@
 import boto3
 
-client = boto3.client('ec2',region_name="us-east-1",aws_access_key_id ="AKIAQFHSZC4HCNU4VH72",aws_secret_access_key ="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")
+client = boto3.client('ec2',region_name="ap-south-1")
 
-##response = client.stop_instances(
-##    InstanceIds=['i-0e5ae2df1a38a6155',]
-##)
-##print("instance stopped")
+response = client.stop_instances(
+   InstanceIds=['i-0787a86e86ae13c13']
+)
+print("instance stopped")
 
 ##response = client.start_instances(
 ##    InstanceIds=['i-0e5ae2df1a38a6155']
@@ -36,7 +36,7 @@ client = boto3.client('ec2',region_name="us-east-1",aws_access_key_id ="AKIAQFHS
 
 
 
-instance = client.create_instance(
+##instance = client.create_instance(
 ##    BlockDeviceMappings=[
 ##        {
 ##            'DeviceName': 'string',
@@ -55,30 +55,27 @@ instance = client.create_instance(
 ##            'NoDevice': 'string'
 ##        },
 ##    ],
-    ImageId='string',
-    InstanceType='t2.micro',
-    KeyName='dbserver',
-    MaxCount=1,
-    MinCount=1,
+##    ImageId='string',
+##    InstanceType='t2.micro',
+##    KeyName='dbserver',
+##   MaxCount=1,
+##    MinCount=1,
      
-    TagSpecifications=[
-        {
-            'ResourceType':'instance',
-            'Tags': [
-                {
-                    'Key': 'Name',
-                    'Value': 'ec2'
-                },
-            ]
-        },
-    ],
+##    TagSpecifications=[
+##       {
+##            'ResourceType':'instance',
+##            'Tags': [
+##                {
+##                    'Key': 'Name',
+##                    'Value': 'ec2'
+##              },
+##            ]
+##      },
+##  ],
     
-    
+##)
 
-    
-)
-
-print("instance created ",instance)
+##print("instance created ",instance)
 
 
 
