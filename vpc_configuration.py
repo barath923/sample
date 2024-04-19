@@ -1,11 +1,11 @@
 import boto3
 
-client = boto3.client('ec2',region_name="us-east-1",aws_access_key_id ="AKIAQFHSZC4HCNU4VH72",aws_secret_access_key ="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")
+client = boto3.client('ec2',region_name="us-east-1",aws_access_key_id ="AKIA6ODUZVBX3M6DR5SM",aws_secret_access_key ="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")
 
-vpc=input("Enter the vpc cidr ")
-##avazone=input("enter the Subnet's Availability Zone ")
-subnetcidr=input("enter the subnet's cidr ")
-routeentry=input("Enter igw route entry ")
+# vpc=input("Enter the vpc cidr ")
+# ##avazone=input("enter the Subnet's Availability Zone ")
+# subnetcidr=input("enter the subnet's cidr ")
+# routeentry=input("Enter igw route entry ")
 
 
 myvpc1 = client.create_vpc(
