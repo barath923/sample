@@ -80,7 +80,7 @@ route_table_1 = client.create_route_table(
 print(route_table_1['RouteTable']['RouteTableId'])
 
 route1_rt = client.create_route(
-    DestinationCidrBlock=routeentry,
+    DestinationCidrBlock='0.0.0.0/0',
     GatewayId=internet_gtw['InternetGateway']['InternetGatewayId'],
     RouteTableId=route_table_1['RouteTable']['RouteTableId'],
     
