@@ -37,7 +37,7 @@ mysubnet1 = client.create_subnet(
             ]
         },
     ],
-    CidrBlock = subnetcidr,
+    CidrBlock = '10.10.1.0/24',
     VpcId = myvpc1['Vpc']['VpcId']
 )
 
