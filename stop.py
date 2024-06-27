@@ -1,9 +1,9 @@
 import boto3
 
-client = boto3.client('ec2',region_name="ap-south-1")
+client = boto3.client('ec2',region_name="us-east-1")
 
 response = client.stop_instances(
-   InstanceIds=['i-0787a86e86ae13c13']
+   InstanceIds=['i-0981282fb1a0f79ea']
 )
 print("instance stopped")
 
