@@ -1,6 +1,6 @@
 import boto3
 
-client = boto3.client('ec2',region_name="ap-south-1",aws_access_key_id=ACCESS_KEY,aws_secret_access_key=SECRET_KEY)
+client = boto3.client('ec2',region_name="ap-south-1",aws_access_key_id='AKIA6ODU57I5KE3IJ2YO',aws_secret_access_key="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')
 
 # vpc=input("Enter the vpc cidr ")
 # ##avazone=input("enter the Subnet's Availability Zone ")
